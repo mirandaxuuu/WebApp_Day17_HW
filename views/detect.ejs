@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Language Detector V3.0</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+</head>
+
+<body>
+    <iframe src="https://giphy.com/embed/wypXxlLUpzp7O" width="480" height="270" frameBorder="0" class="giphy-embed"
+        allowFullScreen></iframe>
+    <p><a href="https://giphy.com/gifs/channelfrederator-animation-channel-frederator-cartoons-wypXxlLUpzp7O"></a></p>
+    <h1>I am a language detector</h1>
+    <p id="content"></p>
+
+    <style type="text/css">
+        body {
+            font-family: 'Noto Serif JP', sans-serif;
+            text-align: center;
+        }
+        h2 {
+            color: darkblue;
+        }
+        p {
+            color: darkblue;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+
+    <fieldset>
+        <form action="/app" method="post">
+          <input name="text" type="text" class="ghost-input" placeholder="Enter your text" required>
+          <input type="submit" class="ghost-button" value="Detect your language">
+        </form>
+        
+        <% if(answer !== null){ %>
+          <p><%= answer %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+
+    </fieldset>
+
+</body>
+
+</html>
