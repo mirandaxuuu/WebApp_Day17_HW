@@ -3,7 +3,7 @@ const app = express();
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
 const request = require('request');
-const accessKey = '008b882bc469731393a0753a43a30769';
+const accessKey = 'ACCESS KEY';
 const fs = require('fs');
 
 app.use(bodyParser.urlencoded({extended: true}));
